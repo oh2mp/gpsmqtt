@@ -12,7 +12,7 @@ Where la = latitude, lo = longitude, kmh = kilometers per hour, cou = course as 
 ## Hardware
 
 The GPS module is Beitian BN-280 which is a cheap and working module which supports GPS and Glonass. 
-They are available eg. in AliExpress.
+They are available eg. in AliExpress. Any other standard module would work too.
 
 The TX of the GPS module is connected to pin 13 with a voltage divider because the GPS module is 5V and ESP8266 is 3.3V.
 
@@ -44,9 +44,15 @@ You can use the ESP8266 filesystem uploader tool to upload the contents of data 
 
 ## Portal mode
 
-If pin 2 is grounded, the device starts portal mode. The pin can be also changed from the code, see row `#define APREQUEST 2`
+If pin 2 is grounded, the device starts portal mode.
 
 Take eg. your phone and connect to WiFi `ESP8266 GPS2MQTT`, accept that there's no internet connection and take your browser to `http://192.168.4.1/`
 
 The web GUI should be quite self explanatory.
+
+## APRS
+
+If you have a radio amateur license and want to use this with APRS, I have made a mqtt2aprs Perl script, 
+which can be used as a systemd service. Just ask for it. For lowering the risk of unlicensed people to 
+connect APRS-IS network, I will not put it in public distribution.
 

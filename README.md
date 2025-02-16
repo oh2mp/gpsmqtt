@@ -9,6 +9,17 @@ The data is sent as JSON of this format:
 
 Where la = latitude, lo = longitude, kmh = kilometers per hour, cou = course as degrees and alt = altitude in meters
 
+## Hardware
+
+Here is my prototype.
+
+![Prototype](i/gizmo_prototype.jpg) ![Schema](i/gpsmqtt_schema.png)
+
+The TX of the GPS module is connected to pin 13 with a voltage divider because the GPS module is 5V and ESP8266 is 3.3V.
+
+The GPS module is Beitian BN-280 which is a cheap and working module which supports GPS and Glonass. 
+They are available eg. in AliExpress.
+
 ## Smart beaconing
 The device uses SmartBeaconing™ algorithm by Tony Arnerich KD7TA and Steve Bragg KA9MVA to choose when the packets are sent. 
 
@@ -20,7 +31,7 @@ Thanks to [OH2TH](https://github.com/oh2th) for the SmartBeaconing code.
 Here are the versions I had installed when I compiled this in Arduino IDE 2.3.4
 
 - EspSoftwareSerial 8.1.0
-- PubSUbCLient 2.8
+- PubSubClient 2.8
 
 I have included here a local copy of Mikal Hart's [TinyGPSPlus](https://github.com/mikalhart/TinyGPSPlus)
 

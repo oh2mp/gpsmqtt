@@ -14,7 +14,7 @@ Where la = latitude, lo = longitude, kmh = kilometers per hour, cou = course as 
 The GPS module is Beitian BN-280 which is a cheap and working module which supports GPS and Glonass. 
 They are available eg. in AliExpress. Any other standard module would work too.
 
-The TX of the GPS module is connected to pin 13 with a voltage divider because the GPS module is 5V and ESP8266 is 3.3V.
+The TX of the GPS module is connected to GPIO13 with a voltage divider because the GPS module is 5V and ESP8266 is 3.3V.
 
 ![Schema](i/gpsmqtt_schema.png)
 
@@ -44,7 +44,7 @@ You can use the ESP8266 filesystem uploader tool to upload the contents of data 
 
 ## Portal mode
 
-If pin 2 is grounded, the device starts portal mode.
+If GPIO2 is grounded, the device starts portal mode.
 
 Take eg. your phone and connect to WiFi `ESP8266 GPS2MQTT`, accept that there's no internet connection and take your browser to `http://192.168.4.1/`
 
@@ -52,7 +52,7 @@ The web GUI should be quite self explanatory.
 
 ![ss1](i/ss1.jpg) ![ss2](i/ss2.jpg)
 
-![ss3](i/ss3.jpg)![ss4](i/ss4.jpg)
+![ss3](i/ss3.jpg) ![ss4](i/ss4.jpg)
 
 ## APRS
 

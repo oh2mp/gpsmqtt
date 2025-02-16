@@ -22,7 +22,7 @@ Here are the versions I had installed when I compiled this in Arduino IDE 2.3.4
 - EspSoftwareSerial 8.1.0
 - PubSUbCLient 2.8
 
-I have included here a local copy of Mikal Hart's TinyGPSPlus
+I have included here a local copy of Mikal Hart's [TinyGPSPlus](https://github.com/mikalhart/TinyGPSPlus)
 
 ## Filesystem
 You can use the ESP8266 filesystem uploader tool to upload the contents of data directory. It contains the html pages for the configuring portal and base config files. Or you can just upload the provided image with upload.py. The command is something like this. Change the path and port (if needed)

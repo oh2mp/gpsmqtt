@@ -11,14 +11,16 @@ Where la = latitude, lo = longitude, kmh = kilometers per hour, cou = course as 
 
 ## Hardware
 
-Here is my prototype.
-
-![Prototype](i/gizmo_prototype.jpg) ![Schema](i/gpsmqtt_schema.png)
-
-The TX of the GPS module is connected to pin 13 with a voltage divider because the GPS module is 5V and ESP8266 is 3.3V.
-
 The GPS module is Beitian BN-280 which is a cheap and working module which supports GPS and Glonass. 
 They are available eg. in AliExpress.
+
+![Schema](i/gpsmqtt_schema.png)
+
+Here is my prototype.
+
+![Prototype](i/gizmo_prototype.jpg)
+
+The TX of the GPS module is connected to pin 13 with a voltage divider because the GPS module is 5V and ESP8266 is 3.3V.
 
 ## Smart beaconing
 The device uses SmartBeaconing™ algorithm by Tony Arnerich KD7TA and Steve Bragg KA9MVA to choose when the packets are sent. 

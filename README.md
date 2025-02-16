@@ -50,6 +50,8 @@ Take eg. your phone and connect to WiFi `ESP8266 GPS2MQTT`, accept that there's 
 
 The web GUI should be quite self explanatory.
 
+![ss1](i/ss1.jpg)![ss2](i/ss2.jpg)![ss3](i/ss3.jpg)![ss4](i/ss4.jpg)
+
 ## APRS
 
 If you have a radio amateur license and want to use this with APRS, I have made a mqtt2aprs Perl script, 
